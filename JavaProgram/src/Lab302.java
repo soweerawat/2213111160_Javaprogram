@@ -1,32 +1,18 @@
 import javax.swing.*;
+import java.text.*;
 
 public class Lab302 {
 
 	public static void main(String[] args) {
-	
-		float ipw = Integer.parseInt(JOptionPane.showInputDialog("Input Weight:"));
-		int iph =  Integer.parseInt(JOptionPane.showInputDialog("Input Height:"));
-		float bmi = (ipw/iph)*(ipw/iph);
-		do {
-			JOptionPane.showMessageDialog(null, "BMI"+bmi);
-		} while(bmi==18.5);
-			if(bmi<18.5) {
-				
-				JOptionPane.showMessageDialog(null,"Underweight");
-		}
-			if(bmi>=18.5){
-				JOptionPane.showMessageDialog(null,"Normal-weight");
-			}
-			if(bmi>=25.0) {
-				JOptionPane.showMessageDialog(null,"Overweight");
-			}
-			 else if(bmi<=30.0) {
-				 JOptionPane.showMessageDialog(null,"Obesity");
-			 }
-		
-		
-		
-		
+		DecimalFormat frm = new DecimalFormat("##.#");
+		double weight = Double.parseDouble(JOptionPane.showInputDialog("Input Weight"));
+		double height = Double.parseDouble(JOptionPane.showInputDialog("Input Height"));
+		double BMI = weight/ Math.pow((height/100), 2);
+		JOptionPane.showMessageDialog(null, 
+				"BMI = " + frm.format(BMI) +
+				"\nYou're " + (BMI < 18.5 ? "Underweight" : BMI >= 18.5 && BMI < 24.9 ? "Normal-weight" : BMI >= 25.0 && BMI < 29.9 ? "Overweight" : "Obesity"),
+						"BMI",
+						JOptionPane.WARNING_MESSAGE);
+	}
 
-}
 }
