@@ -1,0 +1,5 @@
+Date       : 08-Dec-2022
+StudentID  : 2213111160 
+FullName(in English) : Weerawat Phaphukdee
+AKA        : soweerawat
+CiassDetail: User-Defined Method with String

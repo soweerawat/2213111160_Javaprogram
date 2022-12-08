@@ -5,16 +5,15 @@ public class Lab401 {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Full name: ");
-		String fullName = scan.next();
-		if(!fullName.contains(" ")) {
-			System.out.print("Incorrect Name");                                                                                                                                                                                                                                                            
+		String fullName = scan.nextLine();
+		int n = fullName.trim().indexOf(" ");
+		if(n==-1) {
+			                                                                                                                                                                                                                                                            
+			System.out.print("Incorrect Name");
 			
 		}else {
-			String fristName = fullName.substring(0,fullName.indexOf(' '));
-			String lastName = fullName.substring(fullName.indexOf(' ')+1);
-			System.out.println("First Name"+fristName.toUpperCase());
-			System.out.println("Last Name"+lastName.toUpperCase());
-			
+			System.out.println("First Name : "+fullName.substring(0,n).toUpperCase());
+			System.out.println("Last Name : "+fullName.substring(n+1).toLowerCase());
 		}
 	
 	}
