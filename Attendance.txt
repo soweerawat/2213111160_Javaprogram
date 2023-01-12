@@ -1,4 +1,5 @@
-StudentID  : 2213111160 
-Name       : Weerawat Phaphukdee
-AKA        : soweerawat
-CiassDetail: String Methods and Defined Methods
+Data : 12-Jan-2023
+StudentID : 2213111160
+FullName(in English) : Weerawat Phaphukdee
+AKA : soweerawat
+CaissDetail : GUI
