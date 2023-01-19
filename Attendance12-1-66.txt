@@ -1,5 +1,5 @@
-Data : 15-Dec-2022
+Data : 12-Jan-2023
 StudentID : 2213111160
 FullName(in English) : Weerawat Phaphukdee
 AKA : soweerawat
-CaissDetail : Array in Java
+CaissDetail : GUI
