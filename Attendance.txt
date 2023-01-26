@@ -1,5 +1,5 @@
-Data : 19-Jan-2023
+Data : 26-Jan-2023
 StudentID : 2213111160
 FullName(in English) : Weerawat Phaphukdee
 AKA : soweerawat
-CaissDetail : Encapsulation
+CaissDetail : Composition and Inheritance
