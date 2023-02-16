@@ -1,5 +1,5 @@
-Data : 09-Feb-2023
+Data : 16-Feb-2023
 StudentID : 2213111160
 FullName(in English) : Weerawat Phaphukdee
 AKA : soweerawat
-CaissDetail :  File and Exception Handling
+CaissDetail :  File (Write / Read)
